@@ -12,7 +12,7 @@ COPY . .
 # Build the project
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx:1.29.3-alpine3.22
 
 WORKDIR /app
 
